@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Generador de Presupuesto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://sensationimage.com/wp-content/uploads/2025/11/Si-sensationimage-2.png" type="image/x-icon">
+    
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Generador de Presupuesto</h1>
+
+        <form id="budget-form" enctype="multipart/form-data">
+
+            <label>Tipo de producto:</label>
+            <select id="product-type" name="product_type">
+                <option value="fachada">Fachada</option>
+                <option value="pared">Pared</option>
+                <option value="suelo">Suelo</option>
+                <option value="vehiculo">Vehículo</option>
+            </select>
+
+            <div class="row">
+                <div>
+                    <label>Ancho (m):</label>
+                    <input type="number" id="width" name="width" step="0.1" value="1.5">
+                </div>
+                <div>
+                    <label>Alto (m):</label>
+                    <input type="number" id="height" name="height" step="0.1" value="1">
+                </div>
+            </div>
+
+            <label>Complejidad de diseño:</label>
+            <select id="design-complexity" name="design_complexity">
+                <option value="simple_texto">Simple</option>
+                <option value="logo_basico">Logo Básico</option>
+                <option value="grafico_complejo">Gráfico Complejo</option>
+            </select>
+
+    <div class="check-row">
+        <label class="check-item">
+            <input type="checkbox" id="laminado"> Laminado
+        </label>
+
+        <label class="check-item">
+            <input type="checkbox" id="instalacion"> Instalación
+        </label>
+    </div>
+
+            <label>Sube tu archivo (opcional):</label>
+            <input type="file" id="file-upload" name="file">
+
+            <button type="button" id="send-btn">Enviar presupuesto</button>
+
+        </form>
+
+        <hr>
+
+        <h2>Resultado</h2>
+
+        <p><strong>Área:</strong> <span id="area-display">0 m²</span></p>
+        <p><strong>Costo base:</strong> <span id="base-cost-display">0 €</span></p>
+        <p><strong>Complejidad:</strong> <span id="complexity-cost-display">0 €</span></p>
+        <p><strong>Diseño:</strong> <span id="design-cost-display">0 €</span></p>
+        <p><strong>Laminado:</strong> <span id="laminate-cost-display">0 €</span></p>
+        <p><strong>Instalación:</strong> <span id="install-cost-display">0 €</span></p>
+
+        <h2>Total: <span id="total-cost-display">0 €</span></h2>
+
+        <div id="response"></div>
+        <button id="interesado-btn" class="hidden">Estoy interesado</button>
+
+<div id="telefono-section" class="hidden telefono-box">
+    <h2>¿Te llamamos?</h2>
+    <p>Déjanos tu número y un asesor te contactará para coordinar la instalación.</p>
+
+    <input type="text" id="telefono" placeholder="Tu número de teléfono">
+
+    <textarea id="comentario" placeholder="Comentario opcional"></textarea>
+
+    <button id="enviar-telefono">Enviar número</button>
+
+    <div id="telefono-respuesta" class="respuesta"></div>
+</div>
+    </div>
+
+    
+<script src="app.js"></script>
+</body>
+</html>
