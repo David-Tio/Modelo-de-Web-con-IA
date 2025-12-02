@@ -144,7 +144,6 @@ body {
     display: none;
 }
 
-/* Fondo oscuro */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -155,7 +154,6 @@ body {
     z-index: 900;
 }
 
-/* Ventana modal */
 .modal {
     position: fixed;
     top: 50%;
@@ -171,7 +169,6 @@ body {
     text-align: center;
 }
 
-/* Botón cerrar */
 .modal-close {
     position: absolute;
     top: 10px;
@@ -183,7 +180,6 @@ body {
     cursor: pointer;
 }
 
-/* Títulos */
 .modal-title {
     font-size: 22px;
     margin-bottom: 10px;
@@ -195,7 +191,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Inputs */
 .modal-input,
 .modal-textarea {
     width: 100%;
@@ -210,7 +205,6 @@ body {
     height: 80px;
 }
 
-/* Botón enviar */
 .modal-btn {
     width: 100%;
     padding: 14px;
@@ -223,7 +217,6 @@ body {
     font-size: 18px;
 }
 
-/* Respuesta */
 .modal-respuesta {
     background: #fff;
     color: #000;
@@ -233,7 +226,7 @@ body {
     display: none;
 }
 
-/* Ocultar */
+
 .hidden {
     display: none;
 }
